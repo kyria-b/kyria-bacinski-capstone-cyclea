@@ -1,0 +1,43 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.calendar{
+    background-color: $pistachio;
+    &__header, &__subheader{
+        padding: 1rem;
+    }
+    &__dates{
+        display: flex;
+        justify-content: center;
+    }
+    &__content--center{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    &__next-period--date, &__ovulation--date{
+        background-color: $forest-green;
+        color: $white;
+        padding: 1rem;
+        gap: 1rem;
+
+    }
+}
+
+.react-calendar{
+    background-color: $white;
+    color: $black;
+    &__tile{
+        color: $black;
+    }
+    &__navigation{
+        background-color: $white;
+        color: $black;
+    &__arrow, &__label{
+        background-color: $white;
+        color: $black;
+    }
+}
+}

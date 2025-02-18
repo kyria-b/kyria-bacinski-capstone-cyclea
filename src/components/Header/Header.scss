@@ -1,0 +1,45 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;/*---------- Header ----------*/
+
+.header{
+  &__logo{
+    height: 20%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  &__list {
+    display:flex;
+    justify-content: flex-end;
+  }
+}
+
+.hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./src/assets/images/hero_leaves.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  @include tablet {
+    padding-left: 2.25rem;
+    height: 50vh;
+  }
+  @include desktop {
+    padding-left: 4rem;
+    height: 50vh;
+  }
+  &__heading {
+    color: $white;
+  }
+  &__subheading{
+    color: white;
+    font-style: italic;
+  }
+}
