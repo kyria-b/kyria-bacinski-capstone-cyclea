@@ -53,17 +53,13 @@
     }
     &__img {
       background: $pistachio;
-      width: 33%;
-      height: 33%;
+      width: 100%;
+      height: 100%;
       padding: 0 1rem 1rem 1rem;
       transition: filter 0.3s ease;
       border-radius: 3rem;
       @include tablet{
         padding: 0 1rem 5rem 1rem;
-        border-radius: 3rem;
-      }
-      &:hover {
-        filter: grayscale(20%);
       }
     }
   }

@@ -6,7 +6,7 @@ function About() {
       <section className="about__container">
         <h2 className="about__about">About</h2>
         <h4 className="about__quote">
-          “Inspired by nature & plant growth cycles, Cyclea encourages a balanced approach to health, acknowledging that just as plants thrive in harmony with the seasons, women can optimize their wellness by understanding their body's natural rhythms.”
+          “Inspired by nature growth cycles and a climbing plant by the same name, Cyclea encourages a balanced approach to health, acknowledging that just as plants thrive in harmony with the seasons, women can optimize their wellness by understanding their body's natural rhythms.”
         </h4>
         <h3 className="about__quote-lead">- Kyria Bacinski, Founder & CEO</h3>
 

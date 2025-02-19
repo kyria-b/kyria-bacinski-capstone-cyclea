@@ -4,18 +4,28 @@
 
 .calendar{
     background-color: $pistachio;
-    &__header, &__subheader{
+    &__header{
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    &__subheader{
         padding: 1rem;
     }
     &__dates{
         display: flex;
         justify-content: center;
     }
+    &{
+        margin-right: 2rem;
+    }
+    &__container{
+        font-size: larger;
+        font-weight: 600;
+    }
     &__content--center{
         display: flex;
         justify-content: center;
         gap: 2rem;
-        padding: 1rem;
+        padding: 1rem 1rem 2rem 1rem;
     }
     &__next-period--date, &__ovulation--date{
         background-color: $forest-green;
@@ -41,3 +51,11 @@
     }
 }
 }
+
+.highlight-period {
+    background-color: #ffccd5 !important; // Light pink background
+    color: #d63384 !important; // Dark pink text
+    border-radius: 50%;
+    font-weight: bold;
+  }
+  
