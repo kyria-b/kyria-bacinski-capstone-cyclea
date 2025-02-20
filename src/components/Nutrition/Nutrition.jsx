@@ -22,15 +22,12 @@ function Nutrition() {
   return (
     <div className="nutrition">
       <h3>Nutrition Recommendations</h3>
-      
-      {/* Phase buttons */}
       <div className="nutrition__buttons">
         <button onClick={() => setPhase("Menstruation")}>Menstruation</button>
         <button onClick={() => setPhase("Follicular")}>Follicular</button>
         <button onClick={() => setPhase("Ovulation")}>Ovulation</button>
         <button onClick={() => setPhase("Luteal")}>Luteal</button>
       </div>
-
       <h4>Current Phase: {phase}</h4>
       <p>{getDietRecommendation()}</p>
     </div>
