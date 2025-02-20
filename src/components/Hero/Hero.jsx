@@ -1,5 +1,6 @@
 import "./Hero.scss";
 
+
 function Hero({ backgroundImage, heading, subheading }) {
   return (
     <section className="hero-banner" style={{ backgroundImage: `url(${backgroundImage})` }}>
