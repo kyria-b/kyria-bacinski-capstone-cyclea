@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-// Ensure API key is correctly stored in environment variables (Vite)
 const API_KEY = import.meta.env.VITE_SPOONACULAR_API_KEY;
 
 const FoodLogging = () => {
@@ -23,7 +22,6 @@ const FoodLogging = () => {
     localStorage.setItem("mealLog", JSON.stringify(mealLog));
   }, [mealLog]);
 
-  // Helper function to extract summary nutrients (calories, carbs, fat, protein)
   const getSummaryNutrients = (nutrients = []) => {
     const summary = {
       calories: null,
@@ -75,14 +73,13 @@ const FoodLogging = () => {
     return totals;
   };
 
-  // Fetch detailed ingredient information (nutrition data) by ingredient ID
-  const fetchIngredientDetails = async (ingredientId) => {
+  const IngredientDetails = async (ingredientId) => {
     try {
       const response = await axios.get(
         `https://api.spoonacular.com/food/ingredients/${ingredientId}/information`,
         {
           params: {
-            amount: 100, // Nutrition info for 100 grams
+            amount: 100, 
             unit: "grams",
             apiKey: API_KEY,
           },
@@ -90,12 +87,11 @@ const FoodLogging = () => {
       );
       return response.data;
     } catch (error) {
-      console.error("Error fetching ingredient details:", error);
+      console.error("Error getting ingredient details:", error);
       return null;
     }
   };
 
-  // Handle food search
   const handleSearchFood = async (e) => {
     e.preventDefault();
 
@@ -106,7 +102,7 @@ const FoodLogging = () => {
 
     setLoading(true);
     try {
-      // Step 1: Search for ingredient by name
+      // Step 1: Search for food by name
       const searchUrl = `https://api.spoonacular.com/food/ingredients/search?query=${foodQuery}&number=5&sort=calories&sortDirection=asc&apiKey=${API_KEY}`;
       const searchResponse = await axios.get(searchUrl);
 
@@ -116,10 +112,10 @@ const FoodLogging = () => {
         return;
       }
 
-      // Step 2: Fetch detailed nutrition for each ingredient
+      // Step 2: Get detailed nutrition for each ingredient
       const resultsWithDetails = await Promise.all(
         searchResponse.data.results.map(async (food) => {
-          const details = await fetchIngredientDetails(food.id);
+          const details = await IngredientDetails(food.id);
           return {
             ...food,
             nutrition: details ? details.nutrition.nutrients : [],
@@ -129,8 +125,8 @@ const FoodLogging = () => {
 
       setFoodResults(resultsWithDetails);
     } catch (error) {
-      console.error("Error fetching food data:", error.response || error);
-      alert("Failed to fetch food data. Please check your API key and try again.");
+      console.error("Error getting food data:", error.response || error);
+      alert("Failed to get food data. Please check your API key and try again.");
     } finally {
       setLoading(false);
     }
