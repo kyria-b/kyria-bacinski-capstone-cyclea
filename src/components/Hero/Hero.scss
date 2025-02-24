@@ -20,6 +20,9 @@
         font-weight: 600;
         border: none;
       }
+    &__subheading{
+      font-style: italic;
+    }
     @include tablet {
       padding-left: 2.25rem;
       height: 50vh;

@@ -13,7 +13,7 @@ function Nutrition() {
       <Hero
       backgroundImage={homeBg}
       heading="Nutrition"
-      subheading="Search for nutrtion information"/>
+      subheading="Search for nutrtion information and log meals"/>
       <Food />
       <FoodLogging />
       <Footer />

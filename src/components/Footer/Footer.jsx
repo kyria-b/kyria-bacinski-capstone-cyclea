@@ -2,6 +2,8 @@ import logo from "../../assets/logos/logo.png";
 import instagramIcon from "../../assets/logos/Instagram.svg";
 import facebookIcon from "../../assets/logos/Facebook.svg";
 import twitterIcon from "../../assets/logos/X_twitter.svg";
+import {Link} from "react-router-dom";
+import "../Footer/Footer.scss";
 
 function Footer() {
     return (
@@ -37,8 +39,9 @@ function Footer() {
             </a>
           </div>
         </section>
-
+        <Link to="/">
         <img className="contact__logo contact__logo--2" src={logo} alt="Cyclea logo"/> 
+        </Link>
         <h4 className="contact__copyright">Copyright Kyria Bacinski © 2025 All Rights Reserved</h4>
       </footer>
     );
