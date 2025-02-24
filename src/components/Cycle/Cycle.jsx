@@ -36,7 +36,7 @@ function Cycle() {
             id="cycle"
             onChange={(e) => setCycle(e.target.value)}
             value={cycle}
-            className="m-2"
+            className="calendar__cycle"
           >
             {Array.from({ length: 18 }, (_, i) => i + 28).map((num) => (
               <option key={num} value={num}>

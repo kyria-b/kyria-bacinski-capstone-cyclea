@@ -3,6 +3,8 @@
 @use "../../styles/partials/mixins" as *;/*---------- Header ----------*/
 
 .nutrition{
+    background: $pistachio;
+    padding: 2rem;
     &__buttons{
         display: flex;
         flex-direction: column;

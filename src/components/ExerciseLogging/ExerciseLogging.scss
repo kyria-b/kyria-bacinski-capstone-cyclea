@@ -1,0 +1,59 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;/*---------- Header ----------*/
+
+.exercise{
+    background-color: $white;
+    padding: 1rem;
+    &__search{
+        padding-bottom: 1rem;
+        &--input{
+            padding: 0.5rem;
+            width: 250px;
+        }
+        &--button{
+            padding: 0.5rem;
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+.search{
+    display: flex; 
+    gap: 2rem;
+    &__container{
+    flex: 1;
+    }
+    &__list{
+    list-style: none;
+    padding: 0;
+    &--item{
+        border: 0.025rem solid #ccc;
+        margin-bottom: 1rem; 
+        padding: 0.5rem;
+    }
+    &--duration{
+        width: 3rem;
+        margin-left: 0.5rem;
+    }
+    }
+}
+
+.workout{
+    flex: 1;
+&__list{
+    list-style: none;
+    &--item{
+        border: 0.025 solid #ccc; 
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+    }
+    &--button{
+        margin-top: 0.5rem;
+    }
+}
+}
+
+h1{
+    padding: 1rem;
+}

@@ -11,16 +11,16 @@ function Exercise() {
       case "Follicular":
         return "High-intensity workouts like strength training or cycling!";
       case "Ovulation":
-        return "Moderate-intensity workouts like swimming or moderate running!";
+        return "Moderate-intensity workouts like swimming or trail running/walking!";
       case "Luteal":
-        return "Low-intensity exercises like Pilates or light cardio!";
+        return "Low-intensity exercises like Pilates or treadmill jogging!";
       default:
         return "Please select a phase to get recommendations.";
     }
   };
 
   return (
-    <div className="exercise">
+    <div className="exercise__recommendations">
       <h3>Exercise Recommendations</h3>
       
       {/* Phase buttons */}

@@ -1,6 +1,7 @@
 import "./Header.scss";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logos/logo.png";
+import profile from "../../assets/images/profile.png";
 
 function Header() {
   return (
@@ -29,6 +30,9 @@ function Header() {
             <Link to="/exercise" className="header-link">
               <h3>Exercise</h3>
             </Link>
+          </li>
+          <li className="header__profile">
+          <img className="header__profile--photo" src={profile} alt="Profile photo" />
           </li>
         </ul>
       </nav>
