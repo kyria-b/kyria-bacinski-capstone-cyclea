@@ -1,0 +1,88 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+/*---------Type Kit---------*/
+/*---Typeface & Weights---*/
+@font-face {
+  font-family: "Quicksand";
+  src: url('/src/assets/fonts/Quicksand-Regular.woff') format('woff'), sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+    font-family: "Quicksand";
+    src: url('/src/assets/fonts/Quicksand-SemiBold.woff') format('woff'), sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+/*-- Text Styles --*/
+/*Wordmark*/
+h1, h2, h3, h4, h5, h6, p {
+    font-family: "Quicksand", sans-serif;
+}
+h1{
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 400;
+    @include tablet{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    }
+}
+/*Title*/
+h2{
+    font-size: 1.625rem;
+    line-height: 2.375rem;
+    font-weight: 300;
+    @include tablet{
+    font-size: 3.25rem;
+    line-height: 4.125rem;
+    font-weight: 300;
+    }
+}
+/*Heading*/
+h3{ 
+    font-size: 1.125rem;
+    line-height: 1.438rem;
+    font-weight: 500;
+    @include tablet{
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    font-weight: 500;
+    }
+}
+/*Body Copy*/
+h4{ 
+    font-size: 0.75rem;
+    line-height: 0.938rem;
+    font-weight: 500;
+    @include tablet{
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    font-weight: 500;
+    }
+}
+/*Small Body Copy*/
+h5{ 
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+    font-weight: 500;
+    @include tablet{
+    font-size: 0.75rem;
+    line-height: 0.938rem;
+    font-weight: 500;
+    }
+}
+/*Label*/
+h6{ 
+    font-size: 0.75rem;
+    line-height: 0.938rem;
+    font-weight: 500;
+    @include tablet{
+    font-size: 0.875rem;
+    line-height: 1.094rem;
+    font-weight: 500;
+    }
+}
+

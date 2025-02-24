@@ -1,0 +1,70 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;/*---------- Header ----------*/
+
+button{
+    margin: 1rem;
+}
+
+.food{
+    padding: 1rem;
+    &__form{
+        margin-bottom: 1rem;
+    }
+    &__input{
+        padding: 0.5rem;
+        width: 15.625rem;
+    }
+    &__button{
+        padding: 0.5rem;
+        margin-left: 0.5rem;
+    }
+}
+
+.search{
+    display: "flex";
+    gap: "2rem";
+    &__container{
+        flex: 1;
+    }
+    &__list{
+        list-style: none; 
+        padding: 0;
+        &--item{
+            border: 0.025rem solid #ccc; 
+            margin-bottom: 1rem; 
+            padding: 0.5rem;
+        }
+        &--img{
+            margin-bottom: 0.5rem;
+        }
+        &--button{
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+.log{
+    &__container{
+        flex: 1;
+    }
+    &__list{
+        list-style: none; 
+        padding: 0;
+        &--item{
+            border: 0.025rem solid #ccc; 
+            margin-bottom: 1rem; 
+            padding: 0.5rem;
+        }
+        &--img{
+            margin-bottom: 0.5rem;
+        }
+        &--button{
+            margin-top: 0.5rem;
+        }
+    }
+    &__nutrients{
+        border-top: 0.125rem solid $black; 
+        padding-top: 1rem;
+    }
+}

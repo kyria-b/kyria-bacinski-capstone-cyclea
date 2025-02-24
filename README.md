@@ -1,7 +1,4 @@
-# kyria-bacinski-capstone-cyclea
-
-# Project Title
-Cyclea
+# Cyclea
 
 ## Overview 
 "Nurturing Women's Well-being Naturally"
@@ -9,6 +6,28 @@ Cyclea
 - Cyclea is a holistic health and wellness application designed to help women align their fitness, nutrition, and well-being with their natural cycle. 
 - Inspired by nature and plant growth cycles, Cyclea encourages a balanced approach to health, acknowledging that just as plants thrive in harmony with the seasons, women can optimize their wellness by understanding their body's natural rhythms. 
 - Our mission is to embrance the interconnection between nature, movement, and well-being, helping women flourish in every phase of their cycle.
+
+## Steps to Set-up the Website in Vite
+1. Clone the Repository
+Open your terminal and run:
+git clone <https://github.com/kyria-b/kyria-bacinski-capstone-cyclea.git>
+
+2. Navigate to the Project Folder
+cd kyria-bacinskicapstone-cyclea 
+
+3. Install Dependencies
+Since Vite uses npm, install the required packages:
+npm install
+
+4. Start the Vite Development Server
+Run the following command to start the local development server:
+npm run dev
+
+5. Open the Website in Your Browser
+After running npm run dev, Vite will display a local server URL like:
+http://localhost:5173
+Open this link in your browser to view the website.
+
 
 ### Problem
 
@@ -39,10 +58,10 @@ API Testing: Postman
 Other Tools: npm, browser development tools
 
 ### APIs 
-Custom API: The backend will serve as a RESTful API handling user authentication and cycle tracking.
+Custom API: The RESTful API will serve for handling user authentication and cycle tracking.
 External APIs (Potential Integrations):
 Menstrual Cycle Calendar implmentation idea: https://www.geeksforgeeks.org/ovulation-day-and-next-period-calculator-in-react-js/  
-Nutrition API:https://calorieninjas.com/ 
+Nutrition API: https://spoonacular.com/food-api/
 Exercise API: https://www.api-ninjas.com/api/exercises 
 
 ### Sitemap
@@ -65,21 +84,21 @@ Home: Introduction to Cyclea and its about section with clickable icons that lea
 Initial mockups will be created using goodnotes and images from google, featuring a nature-inspired color palette and soft, organic UI elements to reinforce the theme of natural well-being.
 
 ### Home Page 
-![](./mockups/Home-page-mockup.jpg)
+![](./public/mockups/Home-page-mockup.jpg)
 
 ### Cycle page 
-![](./mockups/Cycle-page-mockup.jpg)
+![](./public/mockups/Cycle-page-mockup.jpg)
 
 ### Nutrition Page
-![](./mockups/Nutrition-page-mockup.jpg)
+![](./public/mockups/Nutrition-page-mockup.jpg)
 
 ### Exercise Page
-![](./mockups/Exercise-page-mockup.jpg)
+![](./public/mockups/Exercise-page-mockup.jpg)
 
 
 ## Data
 
-![](./mockups/site_map.png)
+![](./public/mockups/site_map.png)
 
 - Users Table: Stores user details and preferences.
 - Cycle Phases Table: Tracks cycle phase logs.
