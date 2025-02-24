@@ -13,7 +13,7 @@ Open your terminal and run:
 git clone <https://github.com/kyria-b/kyria-bacinski-capstone-cyclea.git>
 
 2. Navigate to the Project Folder
-cd <kyria-bacinskicapstone-cyclea>
+cd kyria-bacinskicapstone-cyclea 
 
 3. Install Dependencies
 Since Vite uses npm, install the required packages:
