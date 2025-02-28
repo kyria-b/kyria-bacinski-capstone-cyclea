@@ -180,16 +180,16 @@ const FoodLogging = () => {
         <div className="search__container">
           <h2>Meal Log</h2>
           {mealLog.length === 0 && <p>No items saved yet.</p>}
-          <ul className="log__list">
+          <ul className="search__list">
             {mealLog.map((food) => {
               const summary = getSummaryNutrients(food.nutrition);
               return (
-                <li key={food.id} className="log__list--item">
+                <li key={food.id} className="search__list--item">
                   <h3>{food.name}</h3>
                   <img
                     src={`https://spoonacular.com/cdn/ingredients_100x100/${food.image}`}
                     alt={food.name}
-                   className="log__list--img"
+                   className="search__list--img"
                   />
                   <div>
                     <p><strong>Calories:</strong> {summary.calories || "N/A"}</p>
@@ -197,7 +197,7 @@ const FoodLogging = () => {
                     <p><strong>Fat:</strong> {summary.fat || "N/A"}</p>
                     <p><strong>Protein:</strong> {summary.protein || "N/A"}</p>
                   </div>
-                  <button onClick={() => handleRemoveFood(food.id)} className="log__list--button">
+                  <button onClick={() => handleRemoveFood(food.id)} className="search__list--button">
                     Remove
                   </button>
                 </li>
@@ -206,7 +206,7 @@ const FoodLogging = () => {
           </ul>
           {/* Total Nutrients Section */}
           {mealLog.length > 0 && (
-            <div className="log__nutrients">
+            <div className="search__nutrients">
               <h2>Total Nutrients</h2>
               <p><strong>Total Calories:</strong> {totals.calories.toFixed(2)} kcal</p>
               <p><strong>Total Carbs:</strong> {totals.carbs.toFixed(2)} g</p>
