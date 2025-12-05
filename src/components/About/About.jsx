@@ -8,7 +8,7 @@ function About() {
         <h4 className="about__quote">
           “Inspired by nature growth cycles and a climbing plant by the same name, Cyclea encourages a balanced approach to health, acknowledging that just as plants thrive in harmony with the seasons, women can optimize their wellness by understanding their body's natural rhythms.”
         </h4>
-        <h3 className="about__quote-lead">- Kyria Bacinski, Founder & CEO</h3>
+        <h3 className="about__quote-lead">- KB, Founder & CEO</h3>
 
         <div className="about__article">
           <h3 className="about__description about__description--1">
